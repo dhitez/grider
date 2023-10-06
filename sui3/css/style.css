@@ -1,0 +1,71 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    max-width: 1440px;
+    min-height: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1.5fr 11fr 1fr;
+    padding: 15px;
+    grid-gap: 15px;
+}
+
+.head-prim, .foot-prim, .last-art header, .last-art footer{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.head-prim, .foot-prim, .left, .right, nav, article, header, footer, p, aside{
+    border: 1px solid;
+}
+
+.head-prim{
+    display: flex;
+    align-items: flex-end;
+    padding: 10px;
+}
+
+.head-prim nav{
+    width: 100%;
+    height: 50%;
+}
+
+.left, .right{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.left{
+    grid-template-rows: 1fr 9fr 1fr;
+}
+
+.right{
+    grid-template-rows: 1fr 4.5fr 4.5fr 1fr;
+}
+
+.first-art, .last-art{
+    display: grid;
+    grid-gap: 10px;
+    padding: 10px;
+}
+
+.first-art{
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+.last-art{
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr;   
+}
